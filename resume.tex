@@ -24,6 +24,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{5pt}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -93,8 +94,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://msdrigg.github.io}{\Large Scott Driggers}} & Email : \href{mailto:m.scott.driggers@gmail.com}{m.scott.driggers@gmail.com}\\
-  \href{https://msdrigg.github.io}{https://msdrigg.github.io} & Mobile : +l(843)309-7950 \\
+  \textbf{\Large Scott Driggers} & Email : \href{mailto:m.scott.driggers@gmail.com}{m.scott.driggers@gmail.com}\\
+   & Mobile : \href{tel:18433097950}{+l (843) 309 - 7950} \\
+   & Github : \href{https:\\\\github.com\\msdrigg}{msdrigg}\\
 \end{tabular*}
 
 
@@ -104,6 +106,7 @@
     \resumeSubheading
       {Clemson University}{Clemson, SC}
         {Batchelor of Science in Mathematical Sciences}{Aug. 2018 - May 2021}
+
       \resumeSubSubheading
         {Batchelor of Science in Physics}{}
   \resumeSubHeadingListEnd
@@ -116,12 +119,30 @@
       {Poltys Inc.}{Anderson, SC}
       {Software Developer}{Jan 2019 - Present}
       \resumeItemListStart
-        \resumeItem{App Development}
-          {TODO: Resume development}
-        \resumeItem{Data Science}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+        \resumeItem{Android Smartwatch Health Applications}
+          {
+            App for Android to continuously collect health data and detect falls.
+            Developed backend and UI for both systems.
+            Application uses modern iOS and Android archeticture including kotlin, 
+          }
+        \resumeItem{Fall Detection System}
+          {
+            Fall Recognition system built with TensorFlow that predicts falls using batches of motion sensor data.
+            Worked on training, data collection and integration.
+          }
+        \resumeItem{Beacon Location Tracking}
+          {
+            Smart system for tracking indoor location using a network of bluetooth beacons.
+            Addresses interference, signal variability and multi-path issues
+          }
         \resumeItem{Web Development}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+          {
+            Simple portal for users to view health data and admin to modify application configurations
+          }
+        \resumeItem{Wearable Hardware Lead}
+          {
+            Worked with manufacturers to develop custom wearable device for deploying health application in enterprise facilities.
+          }
       \resumeItemListEnd
     
     \resumeSubheading
@@ -129,9 +150,14 @@
       {Research Intern}{Summer 2020}
       \resumeItemListStart
         \resumeItem{Theoretical Neural Network Modeling}
-          {TODO: Resume development}
-        \resumeItem{Computational Machine Learning Development}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+          {
+            Studied the behavior and convergence of simple neural networks as by varying layer width and layer number.
+            Modeled convergence in the weights of various models.
+          }
+        \resumeItem{Neural Network Visualization}
+          {
+            Visualized the convergence of weights and the relative performance of different size networks.
+          }
       \resumeItemListEnd
 
     \resumeSubheading
@@ -139,13 +165,26 @@
       {Research Assistant}{Jan 2019 - Present}
       \resumeItemListStart
         \resumeItem{SAFARI}
-          {SOSOLIK}
+          {
+            Improved the Python wrapper for a classical ion scattering simulation.
+          }
         \resumeItem{Automation Systems}
-          {SOSOLIK}
+          {
+            Developed Arduino program to record resistances from thermistors and calculate temperatures from these measurements.
+            Wrote an interactive python visual interface that communicates with this arduino using the serial port.
+          }
         \resumeItem{Quantum Ion Scattering Simulation}
-          {MARINESCU}
+          {
+            Wrote a quantum simulation of ion scattering off a skewed gold surface.
+            Solving time dependent schrodinger equation using energy states and operators.
+            Implemented in Python using scipy and numpy.
+          }
         \resumeItem{Atmospheric Ray Tracing}
-          {KAEPPLER}
+          {
+            Created a program to trace rays as they deflect through the atmosphere.
+            High performance library with scipy/numpy code. 
+            Supplimented with Rust functions where performance was critical.
+          }
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -156,18 +195,23 @@
     \resumeSubItem{Auto2FA}
       {Browser extension that generates 2FA tokens following RSA or Yubikey Token protocol and automatically fill out 2FA forms}
     \resumeSubItem{Covid Data Visualization}
-      {Producing interactive visualizations of SC Covid cases over time using D3}
+      {Interactive visualizations of SC Covid cases over time using D3}
     \resumeSubItem{Computational Physics Modeling}
       {Computational modeling and visualization of physical systems in Python}
     \resumeSubItem{Chickfila Coupon Manipulation}
       {Producing Chickfila coupons for free sandwhiches by manipulating the survey response portal}
+    \resumeSubItem{Agricultural Drone Imaging}
+      {
+        Developed iOS application using DJI drone protocol to automatically capture images of a crop.
+        Also studied Near-IR imaging and NDVI to measure plant health.
+      }
   \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
  \resumeSubHeadingListStart
-   \resumeSubItem{Languages}{: Python, Java, Kotlin, Swift, JavaScript, Rust, SQL, R}
-   \resumeSubItem{Technologies}{: AWS, TensorFlow, Django, D3.js, Linux, Android, iOS}
+   \resumeSubItem{Languages}{Python, Java, Kotlin, Swift, JavaScript, Rust, SQL, R}
+   \resumeSubItem{Technologies}{AWS, TensorFlow, Django, D3.js, Linux, Android, iOS}
  \resumeSubHeadingListEnd
 
 \end{document}
