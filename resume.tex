@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Sourabh Bajaj
+% Author : Sourabh Bajaj adapted by Scott Driggers
 % License : MIT
 %------------------------
 
@@ -24,7 +24,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\setlength{\footskip}{5pt}
+\setlength{\footskip}{0.5in}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -116,32 +116,32 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Poltys Inc.}{Anderson, SC}
-      {Software Developer}{Jan 2019 - Present}
+      {Poltys Incorporated}{Anderson, SC}
+      {Software Engineer}{Jan 2019 - Present}
       \resumeItemListStart
-        \resumeItem{Android Smartwatch Health Applications}
+        \resumeItem{Enterprise Smartwatch Health Application}
           {
-            App for Android to continuously collect health data and detect falls.
-            Developed backend and UI for both systems.
-            Application uses modern iOS and Android archeticture including kotlin, 
+            Created Wear OS application to continuously collect health data and detect falls.
+            Built systems for deployment in Assisted Living Facilities.
+            Developed backend and UI with modern Android archeticture including Kotlin and Android Jetpack systems.
           }
-        \resumeItem{Fall Detection System}
+        \resumeItem{Fall Detection Model}
           {
-            Fall Recognition system built with TensorFlow that predicts falls using batches of motion sensor data.
-            Worked on training, data collection and integration.
+            Built machine learning model with TensorFlow to predict falls using batches of motion sensor data.
+            Organized data collection, training, and integration.
           }
-        \resumeItem{Beacon Location Tracking}
+        \resumeItem{Real Time Location Services}
           {
-            Smart system for tracking indoor location using a network of bluetooth beacons.
-            Addresses interference, signal variability and multi-path issues
+            Developed system for tracking indoor location using a network of bluetooth beacons.
+            Addressed interference, signal variability, and multi-path issues.
           }
         \resumeItem{Web Development}
           {
-            Simple portal for users to view health data and admin to modify application configurations
+            Built portal for users to view health data and admin to modify application configurations.
           }
         \resumeItem{Wearable Hardware Lead}
           {
-            Worked with manufacturers to develop custom wearable device for deploying health application in enterprise facilities.
+            Worked with manufacturers to develop custom wearable device taylored to our use case.
           }
       \resumeItemListEnd
     
@@ -151,12 +151,8 @@
       \resumeItemListStart
         \resumeItem{Theoretical Neural Network Modeling}
           {
-            Studied the behavior and convergence of simple neural networks as by varying layer width and layer number.
-            Modeled convergence in the weights of various models.
-          }
-        \resumeItem{Neural Network Visualization}
-          {
-            Visualized the convergence of weights and the relative performance of different size networks.
+            Studied the behavior and convergence of simple neural networks by varying layer width and layer number.
+            Modeled and visualized the transformation of layer weights of various models as the network structure was adjusted.
           }
       \resumeItemListEnd
 
@@ -164,26 +160,26 @@
       {Clemson University}{Clemson, SC}
       {Research Assistant}{Jan 2019 - Present}
       \resumeItemListStart
+        \resumeItem{Atmospheric Ray Tracing}
+          {
+            Created a program to trace rays as they deflect through the atmosphere.
+            High performance library with scipy/numpy code. 
+            Supplimented with Rust functions where performance was critical.
+          }
         \resumeItem{SAFARI}
           {
             Improved the Python wrapper for a classical ion scattering simulation.
           }
         \resumeItem{Automation Systems}
           {
-            Developed Arduino program to record resistances from thermistors and calculate temperatures from these measurements.
-            Wrote an interactive python visual interface that communicates with this arduino using the serial port.
+            Automated temperature reading system using an Arduino program that records resistances from multiple thermistors and calculates temperatures from these measurements.
+            Created an interactive python GUI that communicates with the arduino.
           }
         \resumeItem{Quantum Ion Scattering Simulation}
           {
-            Wrote a quantum simulation of ion scattering off a skewed gold surface.
+            Simulated quantum interactions ion scattering off a skewed gold surface.
             Solving time dependent schrodinger equation using energy states and operators.
-            Implemented in Python using scipy and numpy.
-          }
-        \resumeItem{Atmospheric Ray Tracing}
-          {
-            Created a program to trace rays as they deflect through the atmosphere.
-            High performance library with scipy/numpy code. 
-            Supplimented with Rust functions where performance was critical.
+            Derived equations mathematically and then implemented differential equation solver in Python using scipy and numpy.
           }
       \resumeItemListEnd
     \resumeSubHeadingListEnd
@@ -202,8 +198,8 @@
       {Producing Chickfila coupons for free sandwhiches by manipulating the survey response portal}
     \resumeSubItem{Agricultural Drone Imaging}
       {
-        Developed iOS application using DJI drone protocol to automatically capture images of a crop.
-        Also studied Near-IR imaging and NDVI to measure plant health.
+        Developed iOS application that automatically captures images of a specified area using DJI drone.
+        Used Near-IR imaging and NDVI to measure health of a crop.
       }
   \resumeSubHeadingListEnd
 
